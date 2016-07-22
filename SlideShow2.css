@@ -1,0 +1,48 @@
+.slide{
+	box-shadow:0px 0px 10px rgba(180,180,180,0.80);
+	position:relative;
+	height:150px;
+	width:150px;
+	overflow:hidden;
+	text-align:center;
+}
+
+.slide ul{
+	list-style-type:none;
+	position:relative;
+	top:20px;
+}
+
+.slide ul li{
+	font:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:100px;
+	position:absolute;
+	left:-100px;
+	transition:all ease-in 0.5s;
+	clear:both;
+}
+
+.slide ul li.active{
+	top:0px;
+	left:50px;
+}
+
+.slide ul li.next{
+	left:-100px
+}
+.slide ul li.prev{
+	left:-100px
+}
+
+.slide button{
+	position:relative;
+	width:50%;
+}
+
+.slide button#left{
+	float:left;
+}
+
+.slide button#right{
+	float:right;
+}
